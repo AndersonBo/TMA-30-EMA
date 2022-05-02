@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Conference Template">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Registration | Conference Template</title>
+    <style>
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e7e7e7;
+	height: 100vh;
+}
+h3 {
+	text-align: center;
+	color: #413b3b;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-family: 'Zen Tokyo Zoo', cursive;
+}
+h5 {
+	text-align: center;
+	color: #82807f;
+	margin: 80px auto;
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.7;
+}
+.box {
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+}
+.button {
+	font-size: 1em;
+	padding: 15px 35px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background: #403e3d;
+	border-radius: 50px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.wrapper {
+	margin: 70px auto;
+	padding: 20px;
+	background: #e7e7e7;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.wrapper h2 {
+	margin-top: 0;
+	color: #333;
+}
+.wrapper .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.wrapper .close:hover {
+	color: #06D85F;
+}
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+/*form*/
+
+.container {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+}
+form label {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type="submit"] {
+	background-color: #413b3b;
+	color: #fff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Conference Template Banner">
+        <div class="top-left">
+            <span class="title1">OU</span><span class="title2">Walking Club</span>
+        </div>
+        <div class="bottom-right">
+            OU Welcomes You To Take <br> Part in organised
+            walks and socialise Events.
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a class="current" title="Conference Home Page" href=".">Home</a>
+            </td>
+            <td class="navigation">
+                <a title="Register for the Conference" href="registration">Registration</a>
+            </td>
+            <td class="navigation">
+                <a title="Conference Program" href="program">Events</a> 
+            </td>
+            <td class="navigation">
+                <a title="Directions to the Conference" href="directions">About US</a>
+            </td>
+            <td class="navigation">
+                <a title="Conference Flyer" href="flyer">Members</a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <div class="box">
+		<a class="button" href="#divOne">Add Walk Event</a>
+	</div>
+	<div class="overlay" id="divOne">
+		<div class="wrapper">
+			
+			<div class="content">
+				<div class="container">
+					<form>
+						<label>Walk Event Name</label>
+						<input placeholder="Event name.." type="text">
+						<label>Meeting Point</label>
+						<input placeholder="Meeting Point" type="text">
+						<label>Meeting Point</label>
+						<input placeholder="Meeting Point" type="text">
+						<label>Subject</label> 
+						<textarea iplaceholder="Write something.."></textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title">
+                Upcoming Events Details 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Event Name:
+				Socialise Event
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Date:
+				<br>
+				10-05-2022
+            </td>
+        </tr>
+		<tr>
+            <td class="abstract">
+                Designation:
+				Students
+            </td>
+        </tr>
+		<tr>
+            <td class="abstract">
+				Number of Students attended:00
+            </td>
+        </tr>
+		<tr>
+            <td class="abstract">
+				Status:Upcoming
+            </td>
+        </tr>
+    </table>
+	<li class="grey"><a href="#" class="button">Edit Event</a></li>
+
+
+    <footer>
+        Conference Organizers
+        &nbsp;|&nbsp; © 2022 OU Student Clubs. || All rights reserved
+    </footer>
+
+</body>
+</html>
+
